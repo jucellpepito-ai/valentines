@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>z
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Valentine 💖</title>
+
+        <style>
+            * {
+                      margin: 0;
+                            padding: 0;
+                                  box-sizing: border-box;
+                                        font-family: 'Arial', sans-serif;
+            }
+
+                body {
+                          height: 100vh;
+                                background: linear-gradient(135deg, #ff758c, #ff7eb3);
+                                      display: flex;
+                                            justify-content: center;
+                                                  align-items: center;
+                                                        text-align: center;
+                                                              overflow: hidden;
+                }
+
+                    .container {
+                              background: rgba(255, 255, 255, 0.95);
+                                    padding: 30px 20px;
+                                          border-radius: 25px;
+                                                width: 90%;
+                                                      max-width: 400px;
+                                                            box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+                    }
+
+                        h1 {
+                                  color: #e91e63;
+                                        font-size: 26px;
+                                              margin-bottom: 10px;
+                        }
+
+                            p {
+                                      font-size: 16px;
+                                            margin-bottom: 20px;
+                            }
+
+                                button {
+                                          width: 120px;
+                                                padding: 12px;
+                                                      font-size: 16px;
+                                                            border: none;
+                                                                  border-radius: 12px;
+                                                                        cursor: pointer;
+                                                                              margin: 10px;
+                                }
+
+                                    #yes {
+                                              background-color: #e91e63;
+                                                    color: white;
+                                    }
+
+                                        #no {
+                                                  background-color: #ccc;
+                                                        position: absolute;
+                                        }
+
+                                            .heart {
+                                                      position: fixed;
+                                                            bottom: -20px;
+                                                                  color: #ff1744;
+                                                                        animation: float 6s infinite;
+                                                                              font-size: 20px;
+                                            }
+
+                                                @keyframes float {
+                                                          0% { transform: translateY(0); opacity: 1; }
+                                                                100% { transform: translateY(-100vh); opacity: 0; }
+                                                }
+                                                  </style>
+                                                  </head>
+                                                  <body>
+
+                                                    <!-- 🎵 Background Music -->
+                                                      <!-- CHANGE music.mp3 to your music file name -->
+                                                        <audio autoplay loop>
+                                                            <source src="music.mp3" type="audio/mpeg">
+                                                              </audio>
+
+                                                                <div class="container">
+                                                                    <!-- ✨ CHANGE NAME HERE -->
+                                                                        <h1>Hi, <span id="name">Crush Name</span> 💕</h1>
+                                                                            <p>You make my days brighter and my heart happier 💖</p>
+                                                                                <h1>Will you be my Valentine? 🌹</h1>
+
+                                                                                    <button id="yes" onclick="yesClicked()">Yes 💘</button>
+                                                                                        <button id="no" onmouseover="moveNo()">No 💔</button>
+                                                                                          </div>
+
+                                                                                            <script>
+                                                                                                function yesClicked() {
+                                                                                                          alert("YAY! 💖 Happy Valentine’s Day 🥰🌹");
+                                                                                                }
+
+                                                                                                    function moveNo() {
+                                                                                                              const no = document.getElementById("no");
+                                                                                                                    const x = Math.random() * (window.innerWidth - 100);
+                                                                                                                          const y = Math.random() * (window.innerHeight - 50);
+                                                                                                                                no.style.left = x + "px";
+                                                                                                                                      no.style.top = y + "px";
+                                                                                                    }
+
+                                                                                                        // Floating hearts
+                                                                                                            setInterval(() => {
+                                                                                                                      const heart = document.createElement("div");
+                                                                                                                            heart.className = "heart";
+                                                                                                                                  heart.innerHTML = "❤️";
+                                                                                                                                        heart.style.left = Math.random() * 100 + "vw";
+                                                                                                                                              heart.style.fontSize = Math.random() * 10 + 15 + "px";
+                                                                                                                                                    document.body.appendChild(heart);
+
+                                                                                                                                                          setTimeout(() => heart.remove(), 6000);
+                                                                                                            }, 500);
+                                                                                                              </script>
+
+                                                                                                              </body>
+                                                                                                              </html>
+
+                                                                                                            })
+                                                                                                    }
+                                                                                                }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
